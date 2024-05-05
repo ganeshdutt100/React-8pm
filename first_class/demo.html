@@ -1,0 +1,93 @@
+<html>
+
+  <head>
+    <title>HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+        }
+        ul{
+            display: flex ;
+            gap: 30px;
+            list-style: none;
+        }
+
+
+        .main{
+            display: flex;
+            padding: 0 100px;
+            margin-top: 50px;
+            flex-direction: column-reverse;
+            
+        }
+        .img img{
+            width: 400px;
+            border-radius: 20px;
+        }
+        .text{
+            margin-top: 100px;
+        }
+
+
+        @media only screen and (min-width: 768px) {
+            .main{
+                flex-direction: row;
+            }
+
+            .img img{
+            width: 600px;
+            border-radius: 20px;
+        }
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <div class="logo">logo</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+
+   <!-- <article>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, eaque. Quod provident, itaque assumenda labore vitae aliquam. Neque natus, nemo quis aliquam qui id veritatis, recusandae illum in harum repudiandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, eaque. Quod provident, itaque assumenda labore vitae aliquam. Neque natus, nemo quis aliquam qui id veritatis, recusandae illum in harum repudiandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, eaque. Quod provident, itaque assumenda labore vitae aliquam. Neque natus, nemo quis aliquam qui id veritatis, recusandae illum in harum repudiandae!</p>
+   </article>
+
+
+   <section>
+
+    <h1>Lorem ipsum dolor sit amet.</h1>  
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem soluta aspernatur velit? Tempore, velit reprehenderit. Sapiente vitae, eligendi ratione quam eos dignissimos quas unde, corporis temporibus earum numquam quisquam voluptas?
+
+    </p>
+
+
+    <img src="https://img.freepik.com/free-photo/person-playing-3d-video-games-device_23-2151005751.jpg?t=st=1710049620~exp=1710053220~hmac=a1667a774ce74924b5dd9d1cf419d452cb791c388d347c56af2eea93882f15b0&w=900" alt="" width="400px" height="400px" style="border-radius: 50%;">
+</section>   -->
+
+<div class="main">
+    <div class="text">
+     <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem impedit nobis libero expedita ex cumque est possimus eius, laboriosam dicta, illum dignissimos blanditiis vel ratione provident numquam temporibus animi.</p>
+    </div>
+    <div class="img">
+        <img src="https://img.freepik.com/free-photo/person-playing-3d-video-games-device_23-2151005751.jpg?t=st=1710049620~exp=1710053220~hmac=a1667a774ce74924b5dd9d1cf419d452cb791c388d347c56af2eea93882f15b0&w=900" alt="">
+    </div>
+</div>
+  </body>
+</html>
