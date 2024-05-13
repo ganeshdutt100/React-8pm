@@ -8,16 +8,22 @@ import { HealthyFood } from './components/HealthyFood'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Props } from './components/Props';
 import { Sec1 } from './components/Sec1';
+import { Togglebtn } from './components/Togglebtn';
+import { Dark } from './components/Dark';
+import { Carousel } from './components/Carousel';
 
 function App() {
  
 
   return (
     <>
-      <Props  />
+    <Dark/>
+    <Carousel/>
+      {/* <Props  />
 
       <HealthyFood helthypara={"i am bhumika"}/>
       <Sec1></Sec1>
+      <Togglebtn/> */}
  
     </>
   )

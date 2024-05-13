@@ -1,0 +1,17 @@
+.on-scroll{
+    /* background: url(bg-2.jpg) no-repeat ;
+    background-size: cover; */
+    background-color: #91868689;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.03);
+    transition:all .15s ease-in-out ;
+    color: white!important;
+    /* border-radius: 0px 0px 58px 64px; */
+/* padding-bottom: 30px; */
+  }
+
+
+  .blackMode{
+    background-color: rgb(255, 4, 4);
+    color: white;
+  }
