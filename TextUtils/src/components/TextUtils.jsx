@@ -20,7 +20,7 @@ export const TextUtils = () => {
     }
   return (
     <div className=' container'>
-    <div className="text d-flex justify-content-around mb-3 mt-3">
+    <div className="text d-flex justify-content-around mb-3 pt-4">
   <h2 className='text-center '>Text Utils</h2>
 
 
