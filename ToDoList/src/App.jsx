@@ -4,13 +4,15 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Todo } from './components/Todo';
+import { Section2 } from './components/Section2';
 
 function App() {
   
 
   return (
     <>
-    <Todo/>
+    <Section2/>
+    {/* <Todo/> */}
      
     </>  
   )
