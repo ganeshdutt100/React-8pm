@@ -2,15 +2,19 @@ import React from 'react';
 import ganeshImage from '../../assets/ganesh-removebg.png'; // Adjust the path based on your folder structure
 import './home.css'
 export const Home = () => {
+
+
   return (
-    <div className="container" style={{paddingTop:'200px'}}>
+    <>
+
+    <div className="container" style={{paddingTop:'150px'}}>
       <div className="row">
         <div className="col col-3 mt-5 pt-5">
         {/* Name */}
         <div className='d-flex'>
 
           <h1 className='fw-bold homeH1 ps-5'>
-            Ganesh <br /> Dutt{' '}
+            Ganesh <br /> Dutt
             
 
             
@@ -75,7 +79,7 @@ export const Home = () => {
  {/* End icons */}
  
  {/* Call.. */}
-<button className="ui-btn">
+<button className="ui-btn ms-5 mt-4  rounded-4">
   <span>
     Contact 
   </span>
@@ -84,16 +88,25 @@ export const Home = () => {
 
 
         </div>
-        <div className="col col-6 ">
-          <img className=' img-fluid'
+        <div className="col col-6  position-relative text-center">
+        <div className='Homecircle position-absolute rounded-circle 
+        ' style={{left:'18%',top:'10px', zIndex:'-2' }} ></div>
+          <img className=' img-fluid '
             src={ganeshImage}
             alt="Ganesh Dutt"
           />
         </div>
-        <div className="col col-3">
-          <p>INTRODUCTION</p>
+        <div className="col col-3 mt-5">
+          <h3>INTRODUCTION</h3>
+          I AM  <span id="element"></span>
+          Full Stack Web Developer , Trainer , UI/UX Designer
         </div>
       </div>
     </div>
+
+
+
+    </>
+
   );
 };
