@@ -1,5 +1,6 @@
 import React from 'react';
 import ganeshImage from '../../assets/ganesh-removebg.png'; // Adjust the path based on your folder structure
+import ganeshSecond from './profile-pic (4).png';
 import './home.css'
 export const Home = () => {
 
@@ -9,7 +10,7 @@ export const Home = () => {
 
     <div className="container" style={{paddingTop:'150px'}}>
       <div className="row">
-        <div className="col col-3 mt-5 pt-5">
+        <div className="col col-lg-3 col-12  mt-5">
         {/* Name */}
         <div className='d-flex'>
 
@@ -88,18 +89,24 @@ export const Home = () => {
 
 
         </div>
-        <div className="col col-6  position-relative text-center">
-        <div className='Homecircle position-absolute rounded-circle 
-        ' style={{left:'18%',top:'10px', zIndex:'-2' }} ></div>
-          <img className=' img-fluid '
+        <div className="col col-lg-5 col-12  position-relative text-center">
+        <div className='d Homecircle position-absolute rounded-circle 
+        ' style={{left:'21%',top:'10px', zIndex:'-2' }} ></div>
+          <img className='img-fluid d-lg-none  '
+            src={ganeshSecond}
+            alt="Ganesh Dutt"
+          />
+          <img className='homeImage d-none  d-lg-flex'
             src={ganeshImage}
             alt="Ganesh Dutt"
           />
         </div>
-        <div className="col col-3 mt-5">
+        <div className="col col-lg-4 col-12 mt-5 homeIntro" >
           <h3>INTRODUCTION</h3>
+          <h1>
           I AM  <span id="element"></span>
           Full Stack Web Developer , Trainer , UI/UX Designer
+          </h1>
         </div>
       </div>
     </div>

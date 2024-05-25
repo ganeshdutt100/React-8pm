@@ -18,7 +18,7 @@ export const Navbar = (props) => {
 
   return (
     <>
- <nav className={`navbar fixed-top navbar-expand-sm navbar-${props.mode}  ` }>
+ <nav className={`navbar fixed-top navbar-expand-lg navbar-${props.mode}  ` }>
   <div className="container">
     <a className="navbar-brand logo" href="#"><i className="fa-solid fa-code " ></i> GD <span className="fs-1  text-secondry">.</span> </a>
 

@@ -1,5 +1,14 @@
 .homeH1{
     font-size: 50px;
+    font-family: "Kanit", sans-serif;
+    
+}
+
+.homeIntro{
+  font-family: "Kanit", sans-serif;
+}
+.homeIntro h3{
+  color: #b52ff3;
 }
 
 /* icons */
@@ -403,6 +412,12 @@ ul {
 
     .Homecircle{
        background: linear-gradient(#b52ff3,#e252e2);
-       width: 60%;
+       width: 80%;
        height: 60%;
+    }
+
+
+    .homeImage{
+     width: 900px;
+     margin-left: -100px;
     }
