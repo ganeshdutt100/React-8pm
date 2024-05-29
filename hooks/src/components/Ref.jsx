@@ -1,19 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 
 export const Ref = () => {
-  const intervalRef = useRef(null); // Create a ref to hold the interval ID
+  const inputRef = useRef(null);
 
-  useEffect(() => {
-    intervalRef.current = setInterval(() => {
-      // This function runs every second
-      console.log("Interval running");
-    }, 1000);
+  const handleClick = () => {
+    inputRef.current.focus();
+  };
 
-    // Cleanup function to clear the interval when the component unmounts
-    return () => {
-      clearInterval(intervalRef.current);
-    };
-  }, []); // Empty dependency array means this effect runs once after the initial render
-
-  return <div>My Component</div>;
+  return (
+    <div>
+      <input type="text" ref={inputRef} />
+      <input type="text" />
+      <button onClick={handleClick}>Focus Input</button>
+    </div>
+  );
 };
