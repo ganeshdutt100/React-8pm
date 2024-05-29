@@ -1,12 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 export const Ref = () => {
-  const [first, setfirst] = useState(0);
+  const [first, setFirst] = useState(0);
+  const intervalRef = useRef(null); // Create a ref to hold the interval ID
+
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setFirst((prevFirst) => prevFirst + 1); // Correctly update the state
+    }, 1000);
+
+    // Cleanup function to clear the interval when the component unmounts
+    return () => {
+      clearInterval(intervalRef.current);
+    };
+  }, []); // Empty dependency array means this effect runs once after the initial render
+
   return (
-    <>
-      <button className="btn btn-danger " onClick={() => setfirst(first + 1)}>
-        {first}
-      </button>
-    </>
+    <div>
+      My Component
+      <div>Count: {first}</div> {/* Display the current count */}
+    </div>
   );
 };
