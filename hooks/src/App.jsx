@@ -1,9 +1,11 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { UseEffect } from './components/UseEffect'
-import { UseRefTry } from './components/UseRefTry'
+import { useEffect, useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { UseEffect } from "./components/UseEffect";
+import { UseRefTry } from "./components/UseRefTry";
+import { Effect } from "./components/Effect";
+import { Ref } from "./components/Ref";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,12 +18,14 @@ function App() {
 
   return (
     <>
-     {/* <UseEffect render={count + color}/>
+      {/* <UseEffect render={count + color}/>
      <button onClick={() => setCount(count + 1)}>it's values  {count}</button> */}
 
-     {/* <UseRefTry/> */}
+      {/* <UseRefTry/> */}
+      {/* <Effect /> */}
+      <Ref />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
